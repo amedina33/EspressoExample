@@ -1,5 +1,13 @@
-.gradle
+#Android Generated
 /local.properties
-/.idea/workspace.xml
-.DS_Store
 /build
+
+#IntelliJ IDEA
+.idea
+*.iml
+
+#Gradle
+.gradle
+
+#Other
+.DS_Store
