@@ -11,7 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testPackageName "com.ensolabs.espressoexample.tests"
+        testApplicationId "com.ensolabs.espressoexample.tests"
         testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
     }
     buildTypes {
