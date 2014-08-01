@@ -4,16 +4,17 @@ android {
     compileSdkVersion 19
     buildToolsVersion '20.0.0'
 
+    String applicationName = "com.ensolabs.espressoexample"
+
     defaultConfig {
-        applicationId "com.ensolabs.espressoexample"
+        applicationId applicationName
         minSdkVersion 15
         targetSdkVersion 19
-        versionCode 1
-        versionName "1.0"
 
         testApplicationId "com.ensolabs.espressoexample.tests"
         testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
     }
+
     buildTypes {
         debug {
             applicationIdSuffix ".debug"
@@ -24,7 +25,34 @@ android {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        prod {
+            applicationIdSuffix ".prod"
+            versionNameSuffix "-prod"
+        }
+
+        staging.initWith(buildTypes.debug)
+        staging {
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
+        }
     }
+
+   /* sourceSets {
+        prod {
+            manifest.srcFile "src/prod/AndroidManifest.xml"
+            java.srcDirs "src/prod/java"
+        }
+        main {
+            manifest.srcFile "src/main/AndroidManifest.xml"
+            java.srcDirs "src/main/java"
+            res.srcDirs "src/main/res"
+        }
+        debug {
+            manifest.srcFile "src/debug/AndroidManifest.xml"
+            java.srcDirs "src/debug/java"
+        }
+    }*/
 
     packagingOptions {
         exclude 'LICENSE.txt'
