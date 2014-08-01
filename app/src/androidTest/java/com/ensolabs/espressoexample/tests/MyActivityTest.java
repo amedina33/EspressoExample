@@ -2,14 +2,14 @@ package com.ensolabs.espressoexample.tests;
 
 import android.test.ActivityInstrumentationTestCase2;
 
-import com.ensolabs.espressoexample.MyActivity;
+import com.ensolabs.espressoexample.debug.MyActivity;
 import com.ensolabs.espressoexample.R;
 
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 
-import static com.ensolabs.espressoexample.MyActivity.Person;
+import static com.ensolabs.espressoexample.debug.MyActivity.Person;
 import static com.google.android.apps.common.testing.ui.espresso.Espresso.onData;
 import static com.google.android.apps.common.testing.ui.espresso.Espresso.onView;
 import static com.google.android.apps.common.testing.ui.espresso.action.ViewActions.click;

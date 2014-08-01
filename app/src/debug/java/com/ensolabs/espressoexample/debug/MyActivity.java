@@ -13,7 +13,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.ensolabs.espressoexample.PersonDetailsActivity;
 import com.ensolabs.espressoexample.R;
 
 import java.io.Serializable;
@@ -107,7 +106,7 @@ public class MyActivity extends Activity {
     @Provides @Singleton public List<Person> providePeople() {
       ArrayList<Person> people = new ArrayList<Person>();
       for (int i = 0; i < 50; i++) {
-        people.add(new Person("Chris", String.valueOf(i)));
+        people.add(new Person("Arthur", String.valueOf(i)));
       }
       return people;
     }

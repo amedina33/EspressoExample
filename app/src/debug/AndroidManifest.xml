@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="debug.PersonDetailsActivity" />
+        <activity android:name=".debug.PersonDetailsActivity" />
     </application>
 
 </manifest>

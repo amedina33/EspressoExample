@@ -1,4 +1,4 @@
-package com.ensolabs.espressoexample.prod;
+package com.ensolabs.espressoexample.release;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -107,7 +107,7 @@ public class MyActivity extends Activity {
     @Provides @Singleton public List<Person> providePeople() {
       ArrayList<Person> people = new ArrayList<Person>();
       for (int i = 0; i < 50; i++) {
-        people.add(new Person("Ed", String.valueOf(i)));
+        people.add(new Person("Miki", String.valueOf(i)));
       }
       return people;
     }

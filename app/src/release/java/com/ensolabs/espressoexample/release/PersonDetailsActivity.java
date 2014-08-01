@@ -1,4 +1,4 @@
-package com.ensolabs.espressoexample.debug;
+package com.ensolabs.espressoexample.release;
 
 
 import android.app.Activity;
@@ -10,7 +10,7 @@ import com.ensolabs.espressoexample.R;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-import static com.ensolabs.espressoexample.debug.MyActivity.Person;
+import static com.ensolabs.espressoexample.MyActivity.Person;
 
 public class PersonDetailsActivity extends Activity {
   public static final String EXTRA_PERSON = "person";
